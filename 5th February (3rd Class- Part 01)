@@ -1,0 +1,29 @@
+public class MyClass {
+ 
+    // Method to sum two integers
+    public int sum(int a, int b) {
+        return a + b;
+    }
+    // Method to sum three integers
+    public int sum(int a, int b, int c) {
+        return a + b +c;
+    }
+    // Method to sum two floating point numbers
+    public float sum(float a, float b) {
+        return a + b;
+    }
+ 
+    // Method to sum two strings
+    public String sum(String a, String b) {
+        return a + b;
+    }
+ 
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        // Testing the sum methods with different parameter types
+        System.out.println("Sum of 3 integers: " + obj.sum(3, 4, 5)); 
+        System.out.println("Sum of integers: " + obj.sum(3, 4));        
+        System.out.println("Sum of floats: " + obj.sum(3.5f, 4.5f));       
+        System.out.println("Sum of strings: " + obj.sum("Hello, ", "world!")); 
+    }
+}

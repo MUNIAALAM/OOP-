@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Shape {
+    double height;
+    double width;
+    double radius;
+ 
+    public Shape(double height, double width, double radius) {
+        this.height = height;
+        this.width = width;
+        this.radius = radius;
+    }
+ 
+        public double area(double height, double width) {
+            this.height=height;
+            this.width=width;
+            return this.height*this.width;
+        }
+ 
+        public double area(double radius) {
+            this.radius=radius;
+            return 3.1416*this.radius*this.radius;
+        }
+ 
+        public static void main(String[] args) {
+ 
+            Scanner scanner = new Scanner(System.in);
+ 
+            System.out.print("Enter height: ");
+            double height = scanner.nextDouble();
+ 
+            System.out.print("Enter width: ");
+            double width = scanner.nextDouble();
+ 
+            System.out.print("Enter radius: ");
+            double radius = scanner.nextDouble();
+ 
+            Shape shape = new Shape( height, width,radius);
+            System.out.println("Area of rectangle : " +shape.area(height,width));
+            System.out.println("Area of circle : " +shape.area(radius));
+ 
+        }
+    }
+ 
